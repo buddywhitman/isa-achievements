@@ -81,7 +81,7 @@ function generatePost(post) {
                         ${post.summary}
                     </p>
                     <a href="#" class="btn">Read Post</a>
-                
+
     `;
   return article;
 }
