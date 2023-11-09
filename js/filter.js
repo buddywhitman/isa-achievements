@@ -7,7 +7,6 @@ const postContainer = document.querySelector('.post-container');
 const search = document.querySelector('[type="search"]');
 
 
-
 //  Fetching the data
 async function fetchPosts() {
     await fetch('./posts.json').then((response) => {
@@ -18,7 +17,7 @@ async function fetchPosts() {
         }
     })
         .then((data) => {
-            posts = data.sort((a,b)=> new Date(b.meta.date) - new Date(a.meta.date));
+            posts = data.sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date));
             filterPosts();
         })
         .catch((error) => {
@@ -69,18 +68,18 @@ function generatePost(post) {
 const loadPosts = () => {
     const frag = document.createDocumentFragment();
     filteredPosts.slice(0, maxDisplayPosts).map((post) => frag.appendChild(generatePost(post)));
-    postContainer.innerHTML='';
+    postContainer.innerHTML = '';
     postContainer.appendChild(frag);
 }
 
-function filterPosts(){
+function filterPosts() {
 
     const searchFilter = (post) =>
-        [post.summary,post.user.jobTitle,post.title,post.user.name[0].firstName, post.user.name[1].lastName,post.meta.tags.map((t)=>t).join('')].map((test)=>test)
-        .join('')
-        .toLowerCase()
-        .indexOf(search.value.toLowerCase()) !== -1;
-    
+        [post.summary, post.user.jobTitle, post.title, post.user.name[0].firstName, post.user.name[1].lastName, post.meta.tags.map((t) => t).join('')].map((test) => test)
+            .join('')
+            .toLowerCase()
+            .indexOf(search.value.toLowerCase()) !== -1;
+
 
     filteredPosts = posts.filter(searchFilter);
     loadPosts();
@@ -89,15 +88,15 @@ function filterPosts(){
 
 // updating number of posts with btn click
 
-function viewMorePosts(){
+function viewMorePosts() {
     maxDisplayPosts += postToShow;
     loadPosts();
 }
 
-document.querySelector('.btn--view').addEventListener('click',viewMorePosts)
+document.querySelector('.btn--view').addEventListener('click', viewMorePosts)
 
 // filter for search
-search.addEventListener('keyup',filterPosts);
+search.addEventListener('keyup', filterPosts);
 
 
 
