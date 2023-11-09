@@ -284,7 +284,9 @@ section{
 
 .fin .btn{
     text-align: center;
-    width: 37rem;
+    width: 30rem;
+    margin-left: 39%;
+    margin-top: 2rem;
 }
 
 .form-container form{
