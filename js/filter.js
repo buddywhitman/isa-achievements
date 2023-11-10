@@ -9,7 +9,7 @@ const search = document.querySelector('[type="search"]');
 
 //  Fetching the data
 async function fetchPosts() {
-    await fetch('/posts.json').then((response) => {
+    await fetch('../posts.json').then((response) => {
         if (response.ok) {
             return response.json();
         } else {
@@ -66,7 +66,7 @@ function generatePost(post) {
     article.innerHTML = `
     <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="/images/p-${randomNumber}.jpg" alt="">
+                <img src="../images/p-${randomNumber}.jpg" alt="">
             </div>
             <div class="content">
                 <div class="price">${post.user.name[0].firstName} ${post.user.name[1].lastName}</div>
