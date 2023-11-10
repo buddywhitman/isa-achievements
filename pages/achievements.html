@@ -93,22 +93,32 @@
 
 <main>
     <div class="packages">
-        <h1>Recent Blog Posts</h1>
+        <h1 class="heading">Recent <span>Blog Posts</span></h1>
         <!-- <input type="range" name="" id="range" min="1" max="360">
         <script>
             document.querySelector('#range').addEventListener('input',(e)=>{
                 document.querySelector(':root').style.setProperty('--hue',`{e.target.value}`)
             })
         </script> -->
-        <label for="search">
-            <input type="search" di="search" autocomplete="off" spellcheck="" placeholder="Enter a search term">
-        </label>
-        <div class="box-container">
+        <div class="search-box-container">
 
+            <label for="search">
+                <input type="search" di="search" autocomplete="off" spellcheck="" placeholder="Enter a search term">
+            </label>
         </div>
+        <div class="post-container box-container">
+               
+        </div>
+        <!-- <div class="box-container box" data-aos="zoom-in">
 
-        <button class="btn btn--view">Read More</button>
+        </div> -->
+
     </div>
+    <div class="btn--view--container">
+        <button class="btn btn--view">Load More</button>
+
+    </div>
+
 </main>
 <!-- home section ends -->
 
