@@ -7,6 +7,27 @@
     --bg-color-1: #fff;
     --bg-color-2: #eee;
     --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+
+    /* sorting variables */
+    /* colors */
+    --hue: 220;
+    --text: var(--hue) 4.8% 28.9%;
+    --accent1: var(--hue) 43.6% 57.5%;
+    --accent2: var(--hue) 71.4% 95.9%;
+    --bkg: var(--hue) 100% 99.6%;
+    /* box shadows */
+    --box-sm: 4px 6px 12px rgba(117, 106, 106, 0.308);
+    --box-lg: 2px 7px 12px rgba(173, 166, 166, 0.425);
+    /* sizing */
+    --xlg: 2.369rem;
+    --lg: 1.777rem;
+    --md: 1.2rem;
+    --sm: 1rem;
+    --xsm: 0.75rem;
+    /* misc */
+    --radius--sm:5px;
+    --radius--lm:15px;
+    --transition: all 160ms ease-in;
 }
 
 * {
@@ -298,8 +319,14 @@ section {
 .fin .btn {
     text-align: center;
     width: 25rem;
-    margin-left: 41%;
+    /* width: 100%; */
+    /* margin-left: 41%; */
     margin-top: 2rem;
+}
+.fin-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-container form {
@@ -834,26 +861,4 @@ section {
 }
 [type="search"]::active{
     outline: 2px solid grey;
-}
-
-:root{
-    /* colors */
-    --hue: 220;
-    --text: var(--hue) 4.8% 28.9%;
-    --accent1: var(--hue) 43.6% 57.5%;
-    --accent2: var(--hue) 71.4% 95.9%;
-    --bkg: var(--hue) 100% 99.6%;
-    /* box shadows */
-    --box-sm: 4px 6px 12px rgba(117, 106, 106, 0.308);
-    --box-lg: 2px 7px 12px rgba(173, 166, 166, 0.425);
-    /* sizing */
-    --xlg: 2.369rem;
-    --lg: 1.777rem;
-    --md: 1.2rem;
-    --sm: 1rem;
-    --xsm: 0.75rem;
-    /* misc */
-    --radius--sm:5px;
-    --radius--lm:15px;
-    --transition: all 160ms ease-in;
 }
