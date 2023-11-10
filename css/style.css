@@ -297,8 +297,8 @@ section {
 
 .fin .btn {
     text-align: center;
-    width: 30rem;
-    margin-left: 39%;
+    width: 25rem;
+    margin-left: 41%;
     margin-top: 2rem;
 }
 
@@ -339,6 +339,36 @@ section {
 
 .form-container form .btn {
     flex: 1 1 23rem;
+}
+
+[type="search"] {
+    background: var(--bg-color-2);
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+    width: 50rem;
+}
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.5rem;
+    color: var(--text-color-1);
+    padding: 1rem;
+}
+
+[type="search"]::placeholder{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: var(--text-color-1);
+    cursor: pointer;
+}
+
+[type="search"]:active {
+    color: var(--orange);
 }
 
 .packages .box-container {

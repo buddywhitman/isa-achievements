@@ -45,21 +45,20 @@ function generatePost(post) {
                         </div>
                         <p class="post__date">${returnPostDate(new Date(post.meta.date))}</p>
                     </div>
-                    <h3 class="post__header">
-                        <a href="#">${post.title}</a>
-                    </h3>
-                    <div class="post__author">
-                        <img class="post__author--avatar" width="55"
+                    <div class="box" data-aos="fade-up">
+                        <img class="image" width="55"
                             src="https://i.picsum.photos/id/55/200/300.jpg?hmac=VjTl-6Y6NNyUWof_G17-KlocVl0QuUoxpir1beSTl8A" alt="Random image">
-                        <div>
-                            <p class="post__author--name">${post.user.name[0].firstName} ${post.user.name[1].lastName}</p>
-                            <p class="post__author--role"><small>${post.user.jobTitle}</small></p>
+                        <div class="content">
+                            <div class="price">
+                                <p class="post__author--name">${post.user.name[0].firstName} ${post.user.name[1].lastName}</p>
+                            </div>
+                            <p class="post__body">
+                                ${post.summary}
+                            </p>
+                            <a href="#" class="btn">Read More</a>
                         </div>
                     </div>
-                    <p class="post__body">
-                        ${post.summary}
-                    </p>
-                    <a href="#" class="btn">Read Post</a>
+                    <a href="#" class="btn">Read More</a>
                 
     `;
     return article;
