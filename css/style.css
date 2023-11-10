@@ -847,7 +847,7 @@ section {
     outline: 2px solid var(--orange);
     width: 100vw;
     max-width: 400px;
-    margin: 0px 10px 20px 10px;
+    margin: 0 10px 20px 10px;
 }
 .search-box-container{
     display: grid;
@@ -859,6 +859,6 @@ section {
     font-size: var(--sm);
     color: hsl(var(--text) / .5);
 }
-[type="search"]::active{
+[type="search"]:active{
     outline: 2px solid grey;
 }
