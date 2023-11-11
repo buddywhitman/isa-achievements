@@ -133,8 +133,9 @@ section {
     border-radius: .5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 4.5rem;
-    width: 50rem;
+    width: 100%;
 }
 
 .search-form input {
@@ -146,7 +147,7 @@ section {
     height: 4.5rem;
     width: 50rem;
     text-transform: none;
-    margin-left: 4.5rem;
+    /* margin-left: 4.5rem; */
     font-size: 1.5rem;
     color: var(--text-color-1);
     padding: 1rem;
