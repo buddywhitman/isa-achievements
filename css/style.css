@@ -469,6 +469,10 @@ section {
     line-height: 1.7;
 }
 
+.post-container {
+    margin: 0 2rem 0 2rem;
+}
+
 .content p {
     max-height: 100px;
     overflow: hidden;
