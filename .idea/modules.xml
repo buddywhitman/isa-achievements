@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../Blog-Filter-Search/.idea/Blog-Filter-Search.iml" filepath="$PROJECT_DIR$/../Blog-Filter-Search/.idea/Blog-Filter-Search.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/Complete-Responsive-Travel-Website-Design-Using-HTML-CSS-JavaScript.iml" filepath="$PROJECT_DIR$/.idea/Complete-Responsive-Travel-Website-Design-Using-HTML-CSS-JavaScript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/isa-achievements.iml" filepath="$PROJECT_DIR$/.idea/isa-achievements.iml" />
     </modules>
   </component>
 </project>
