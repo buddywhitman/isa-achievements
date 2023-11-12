@@ -5,7 +5,7 @@
     <meta content="IE=edge" http-equiv=X-UA-Compatible>
     <meta content="width=device-width, initial-scale=1.0" name=viewport>
     <title>ISA Manipal</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href=https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css rel=stylesheet>
     <link href=https://unpkg.com/swiper/swiper-bundle.min.css rel="stylesheet"/>
     <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css rel=stylesheet>
@@ -13,15 +13,15 @@
 </head>
 <body>
 <header class=header>
-    <a class=logo href=index.html> <img src="images/ISA-logo.png" alt=""> ISA Manipal</a>
+    <a class=logo href=index.html> <img alt="" src="images/ISA-logo.png"> ISA Manipal</a>
     <nav class=navbar>
-        <a href=pages/achievements.html>Achievements</a>
-        <a href="../pages/blogs.html">Blogs</a>
-        <a href=pages/events.html>Events</a>
-        <a href=pages/contact.html>Contact</a>
+        <a href="pages/achievements.html">Achievements</a>
+        <a href="pages/blogs.html">Blogs</a>
+        <a href="pages/events.html">Events</a>
+        <a href="pages/contact.html">Contact</a>
     </nav>
     <div class=icons>
-   <!-- <div class="fas fa-moon" id=theme-btn></div> -->
+        <!-- <div class="fas fa-moon" id=theme-btn></div> -->
         <div class="fas fa-bars" id=menu-btn></div>
     </div>
 </header>
@@ -31,11 +31,12 @@
     </div>
     <div class=content data-aos=fade-up>
         <h3>Welcome to ISA Manipal</h3>
-        <p>Welcome to the official ISA Manipal website, your gateway to exploring innovation, collaboration, and excellence!</p>
-        <a class=btn href=#packages>explore now</a>
+        <p>Welcome to the official ISA Manipal website, your gateway to exploring innovation, collaboration, and
+            excellence!</p>
+        <a class=btn href=#achievements>explore now</a>
     </div>
 </section>
-<section class=packages id=packages>
+<section class=achievements id=achievements>
     <h1 class=heading>Our <span>Achievements</span></h1>
     <div class=box-container>
         <div class=box data-aos=fade-up>
@@ -85,7 +86,7 @@
         </div>
     </div>
 </section>
-<section class=packages id=packages>
+<section class=achievements>
     <h1 class=heading>Recent <span>Blogs</span></h1>
     <div class=box-container>
         <div class=box data-aos=fade-up>
@@ -135,7 +136,7 @@
         </div>
     </div>
 </section>
-<section class=services id=services>
+<section class=events id=events>
     <h1 class=heading><a href=pages/events.html>Upcoming <span>Events</span></a></h1>
     <div class=box-container>
         <div class=box data-aos=zoom-in>
@@ -158,7 +159,7 @@
         </div>
         <div class=box data-aos=zoom-in>
             <span>04</span>
-            <i class="fab fa-angular"></i>  
+            <i class="fab fa-angular"></i>
             <h3>Angular Angle</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
         </div>
@@ -187,6 +188,11 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
         </div>
     </div>
+    <div class=fin-container style="margin-top:2rem; color:white">
+        <div class=fin>
+            <a style="color:white" class="btn" href=pages/events.html>See all Events</a>
+        </div>
+    </div>
 </section>
 <section class=contact id=contact>
     <h1 class=heading><a href=pages/contact.html><span>Contact</span> Us</a></h1>
@@ -199,16 +205,18 @@
             <input aria-label="Enter mobile number" data-aos=fade-up placeholder=number type=number>
             <input aria-label="Enter message subject" data-aos=fade-up placeholder=subject type=text>
         </div>
-        <textarea aria-label="Enter message" cols=30 data-aos=fade-up id name placeholder="your message" rows=10></textarea>
+        <textarea aria-label="Enter message" cols=30 data-aos=fade-up id name placeholder="your message"
+                  rows=10></textarea>
         <input aria-label="Enter submit" class=btn type=submit value="send message">
     </form>
 </section>
 <section class=footer>
     <div class=box-container>
-        <div class=box data-aos=fade-up>
+        <!--<div class=box data-aos=fade-up>
             <h3>Find Us</h3>
-            <a href=#> <i class="fas fa-map-marker-alt"></i>Manipal Institute of Technology (MIT), Udupi - Karkala Rd, Eshwar Nagar, Manipal, Karnataka 576104 </a>
-        </div>
+            <script id="map">(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+            ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>
+        </div>-->
         <div class=box data-aos=fade-up>
             <h3>quick links</h3>
             <a href=index.html> <i class="fas fa-chevron-right"></i> home </a>
@@ -218,27 +226,30 @@
             <a href=pages/contact.html> <i class="fas fa-chevron-right"></i> contact </a>
         </div>
         <div class=box data-aos=fade-up>
-            <h3>contact info</h3>
-            <a href=#> <i class="fas fa-phone"></i> +91-456-7890 </a>
-            <a href=mailto:isa.manipal@gmail.com> <i class="fas fa-envelope"></i> isa.manipal@gmail.com </a>
-            <a href=#> <i class="fas fa-map-marker-alt"></i> Manipal, Udupi, India. </a>
-        </div>
-        <div class=box data-aos=fade-up>
             <h3>follow us</h3>
             <a href=https://isamanipal.business.site/> <i class="fas fa-globe"></i> website </a>
             <a href="https://connect.isa.org/communities/community-home?CommunityKey=f99e7950-a4cb-406d-8ad2-da0488eda8f5">
                 <i class="fas fa-mouse-pointer"></i> isa connect </a>
             <a href=https://www.instagram.com/isa_manipal/> <i class="fab fa-instagram"></i> instagram </a>
-            <a href="https://www.linkedin.com/company/isa-manipal/?originalSubdomain=in"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="https://www.linkedin.com/company/isa-manipal/?originalSubdomain=in"> <i
+                    class="fab fa-linkedin"></i> linkedin </a>
             <a href=https://www.youtube.com/channel/UCkIGRoLLEWvmxLWJgjomj3w> <i class="fab fa-youtube"></i> youtube
             </a>
+        </div>
+        <div class=box data-aos=fade-up>
+            <h3>contact info</h3>
+            <a href=#> <i class="fas fa-phone"></i> +91-456-7890 </a>
+            <a href=mailto:isa.manipal@gmail.com> <i class="fas fa-envelope"></i> isa.manipal@gmail.com </a>
+            <a href=#> <i class="fas fa-map-marker-alt"></i>Manipal Institute of Technology (MIT), Udupi - Karkala Rd,
+                Eshwar Nagar, Manipal, Karnataka 576104 </a>
         </div>
     </div>
     <div class=credit> made with love by <span>akash & pulkit</span> | all rights reserved</div>
 </section>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js></script>
 <script src=https://unpkg.com/swiper/swiper-bundle.min.js></script>
+<!--<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>-->
 <script src=js/script.js></script>
-<script>AOS.init({duration:800,delay:400});</script>
+<script>AOS.init({duration: 800, delay: 400});</script>
 </body>
 </html>
