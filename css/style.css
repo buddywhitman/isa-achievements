@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
 
 :root {
-    --orange:#F79F1F;
+    --primcol:#6c63ff;
     --text-color-1:#444;
     --text-color-2:#666;
     --bg-color-1:#fff;
@@ -37,7 +37,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: var(--orange);
+    background: var(--primcol);
     border-radius: 5rem;
 }
 
@@ -83,7 +83,7 @@ section {
     bottom: 1rem;
     left: 0;
     z-index: -1;
-    background: var(--orange);
+    background: var(--primcol);
     height: 100%;
     width: 100%;
     clip-path: polygon(0 90%, 100% 83%, 100% 100%, 0% 100%);
@@ -95,10 +95,11 @@ section {
     padding: .8rem 3rem;
     font-size: 1.7rem;
     color: #fff;
-    background: var(--orange);
+    background: var(--primcol);
     border-radius: .5rem;
     cursor: pointer;
 }
+
 
 .btn:hover {
     letter-spacing: .2rem;
@@ -124,8 +125,15 @@ section {
     color: var(--text-color-1);
 }
 
-.header .logo i {
-    color: var(--orange);
+.logo{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.header .logo img {
+    height: 4rem;
+    margin-right: 1rem;
 }
 
 .search-form {
@@ -133,8 +141,9 @@ section {
     border-radius: .5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 4.5rem;
-    width: 50rem;
+    width: 100%;
 }
 
 .search-form input {
@@ -146,7 +155,7 @@ section {
     height: 4.5rem;
     width: 50rem;
     text-transform: none;
-    margin-left: 4.5rem;
+    /* margin-left: 4.5rem; */
     font-size: 1.5rem;
     color: var(--text-color-1);
     padding: 1rem;
@@ -160,7 +169,7 @@ section {
 }
 
 .header .search-form label:hover {
-    color: var(--orange);
+    color: var(--primcol);
 }
 
 .header .icons div {
@@ -178,7 +187,7 @@ section {
 
 .header .icons div:hover {
     color: #fff;
-    background: var(--orange);
+    background: var(--primcol);
 }
 
 #search-btn {
@@ -211,7 +220,7 @@ section {
 }
 
 .header .navbar a:hover {
-    color: var(--orange);
+    color: var(--primcol);
     background: var(--bg-color-2);
     padding-left: 2rem;
 }
@@ -278,6 +287,10 @@ section {
     padding-top: 7rem;
 }
 
+.home-index{
+    height: 100vh;
+}
+
 .home .image {
     flex: 1 1 45rem;
 }
@@ -304,7 +317,7 @@ section {
 
 .fin .btn {
     text-align: center;
-    width: 25rem;
+    min-width: 25rem;
     /* width: 100%; */
     /* margin-left: 41%; */
     margin-top: 2rem;
@@ -381,7 +394,7 @@ section {
 }
 
 [type="search"]:active {
-    color: var(--orange);
+    color: var(--primcol);
 }
 
 .packages .box-container {
@@ -423,7 +436,7 @@ section {
 }
 
 .packages .box-container .box .image h3 i {
-    color: var(--orange);
+    color: var(--primcol);
 }
 
 .packages .box-container .box .content {
@@ -492,7 +505,7 @@ section {
     text-align: center;
     font-size: 2.5rem;
     color: #fff;
-    background: var(--orange);
+    background: var(--primcol);
     border-radius: 50%;
     margin-bottom: .5rem;
 }
@@ -595,11 +608,11 @@ section {
 
 .review .review-slider .slide .stars i {
     font-size: 2rem;
-    color: var(--orange);
+    color: var(--primcol);
 }
 
 .swiper-pagination-bullet-active{
-    background: var(--orange);
+    background: var(--primcol);
 }
 
 
@@ -695,12 +708,12 @@ section {
 }
 
 .blogs .box-container .box .content .icons a:hover {
-    color: var(--orange);
+    color: var(--primcol);
 }
 
 .blogs .box-container .box .content .icons a i {
     padding-right: .5rem;
-    color: var(--orange);
+    color: var(--primcol);
 }
 
 .footer {
@@ -728,7 +741,7 @@ section {
 
 .footer .box-container .box a i {
     padding-right: .5rem;
-    color: var(--orange);
+    color: var(--primcol);
 }
 
 .footer .box-container .box a:hover i {
@@ -746,7 +759,7 @@ section {
 }
 
 .footer .credit span {
-    color: var(--orange);
+    color: var(--primcol);
 }
 
 
@@ -821,7 +834,7 @@ section {
 
 [type="search"] {
     border-radius: var(--radius--lm);
-    outline: 2px solid var(--orange);
+    outline: 2px solid var(--primcol);
     width: 100vw;
     max-width: 400px;
     margin: 0 10px 20px 10px;
